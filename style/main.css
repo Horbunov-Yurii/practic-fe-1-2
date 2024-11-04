@@ -6,7 +6,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -628,19 +628,33 @@ button {
 }
 .footer > .container {
   display: flex;
-  align-items: first baseline;
+  align-items: baseline;
   flex-direction: column;
   text-align: center;
-  gap: 60px;
-  align-items: center;
 }
 @media screen and (min-width: 768px) {
   .footer > .container {
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer > .container {
+    flex-wrap: nowrap;
+    justify-content: start;
+    text-align: start;
   }
 }
 .footer__wrapper {
-  width: 235px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .footer__wrapper {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 .footer__logo {
   color: #fff;
@@ -662,6 +676,18 @@ button {
 .footer__address {
   font-style: normal;
   margin-top: 20px;
+}
+.footer__box {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer__box {
+    margin-left: 165px;
+    margin-top: 0px;
+    margin-right: 0px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer__box {
@@ -724,9 +750,16 @@ button {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.footer__block {
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
 @media screen and (min-width: 1200px) {
   .footer__block {
-    margin-left: 93px;
+    margin-left: auto;
+    margin-top: 0px;
+    margin-right: 0px;
   }
 }
 .footer__subscribe {
@@ -763,14 +796,9 @@ button {
   border: 1px solid rgba(255, 255, 255, 0.3);
   background: rgba(33, 150, 243, 0);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  width: 100%;
+  display: block;
 }
 @media screen and (min-width: 480px) {
-  .footer__input {
-    width: 450px;
-  }
-}
-@media screen and (min-width: 768px) {
   .footer__input {
     width: 450px;
   }
