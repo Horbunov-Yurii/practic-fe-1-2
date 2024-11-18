@@ -207,7 +207,13 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./img/olha.jpg" alt="olha" class="team__img" />
+              <picture>
+                <source srcset="./img/desktop/olga-dekstop@1x.webp 1x, ./img/desktop/olga-dekstop@2x.webp 2x" media="(min-width: 1200px)">
+                <source srcset="./img/tablet/olgatablet@1x.webp 1x, ./img/tablet/olgatablet@2x.webp 2x" media="(min-width: 768px)">
+                <source srcset="./img/mobile/olgamobile@1x.webp 1x, ./img/mobile/olgamobile@2x.webp 2x" media="(max-width: 767px)">
+                <source>
+                <img src="./img/olha.jpg" alt="olha" class="team__img" />
+              </picture>
               <div class="team__wrap">
                 <h3 class="team__name">Ольга Рєпіна</h3>
                 <p class="team__taxt">Frontend Developer</p>
@@ -244,7 +250,12 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./img/mukola.jpg" alt="mukola" class="team__img" />
+              <picture>
+                <source srcset="./img/desktop/mikoladesktop@1x.webp 1x, ./img/desktop/mikoladesktop@2x.webp 2x" media="(min-width: 1200px)">
+                <source srcset="./img/tablet/mikolatablet@1x.webp 1x, ./img/tablet/mikolatablet@2x.webp 2x" media="(min-width: 768px)">
+                <source srcset="./img/mobile/mikolamobile@1x.webp 1x, ./img/mobile/mikolamobile@2x.webp 2x" media="(max-width: 767px)">
+                <img src="./img/mukola.jpg" alt="mukola" class="team__img" />
+              </picture>
               <div class="team__wrap">
                 <h3 class="team__name">Микола Тарасов</h3>
                 <p class="team__taxt">Marketing</p>
