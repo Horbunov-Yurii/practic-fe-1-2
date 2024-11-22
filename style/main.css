@@ -335,17 +335,38 @@ button {
 .hero {
   padding-top: 118px;
   padding-bottom: 118px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero.webp);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/mobile/heromobile@1x.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
   overflow: hidden;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/mobile/heromobile@2x.webp);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/tablet/herotablet@1x.webp);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/tablet/herotablet@2x.webp);
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/desktop/herodesktop@1x.webp);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/desktop/herodesktop@2x.webp);
   }
 }
 .hero__title {
@@ -441,16 +462,16 @@ button {
   }
 }
 .advant__item:first-child::before {
-  background-image: url(../img/antenna.png);
+  background-image: url(../../img/symbol-defs.svg#icon-antenna);
 }
 .advant__item:nth-child(2)::before {
-  background-image: url(../img/clock.png);
+  background-image: url(../../img/symbol-defs.svg#icon-clock);
 }
 .advant__item:nth-child(3)::before {
-  background-image: url(../img/diagram.png);
+  background-image: url(../../img/symbol-defs.svg#icon-diagram);
 }
 .advant__item:last-child::before {
-  background-image: url(../img/astronaut.png);
+  background-image: url(../../img/symbol-defs.svg#icon-astronaut);
 }
 .advant__title {
   color: #212121;
