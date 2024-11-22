@@ -37,16 +37,16 @@
   }
 
   &__item {
-    &::before {
-      content: "";
-      margin-bottom: 30px;
-      display: block;
-      width: 100%;
-      height: 120px;
-      border-radius: 4px;
-      background-color: $team-background;
-      background-position: center;
-      background-repeat: no-repeat;
+    // &::before {
+    //   content: "";
+    //   margin-bottom: 30px;
+    //   display: block;
+    //   width: 100%;
+    //   height: 120px;
+    //   border-radius: 4px;
+    //   background-color: $team-background;
+    //   background-position: center;
+    //   background-repeat: no-repeat;
 
       @media screen and (min-width: 480px) {
         width: 450px;
@@ -60,21 +60,47 @@
       }
     }
 
-    &:first-child::before {
-      background-image: url(../../img/symbol-defs.svg#icon-antenna);
+    &__box {
+      width: 100%;
+      height: 120px;
+      border-radius: 4px;
+      background-color: $team-background;
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media screen and (min-width: 480px) {
+        
+      }
+      @media screen and (min-width: 768px) {
+        
+      }
+
+      @media screen and (min-width: 1200px) {
+       
+      }
     }
 
-    &:nth-child(2)::before {
-      background-image: url(../../img/symbol-defs.svg#icon-clock);
-    }
+  //   &:first-child::before {
+  //     background-image: url(../../img/symbol-defs.svg#icon-antenna);
+  //   }
 
-    &:nth-child(3)::before {
-      background-image: url(../../img/symbol-defs.svg#icon-diagram);
-    }
+  //   &:nth-child(2)::before {
+  //     background-image: url(../../img/symbol-defs.svg#icon-clock);
+  //   }
 
-    &:last-child::before {
-      background-image: url(../../img/symbol-defs.svg#icon-astronaut);
-    }
+  //   &:nth-child(3)::before {
+  //     background-image: url(../../img/symbol-defs.svg#icon-diagram);
+  //   }
+
+  //   &:last-child::before {
+  //     background-image: url(../../img/symbol-defs.svg#icon-astronaut);
+  //   }
+  // }
+
+  &__svg {
+     width: 70px;
+     height: 70px;
   }
 
   &__title {
